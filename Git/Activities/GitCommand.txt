@@ -1,0 +1,118 @@
+Microsoft Windows [Version 10.0.26200.8893]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LaxmiNarayanDas\Activities>git init
+Initialized empty Git repository in C:/Users/LaxmiNarayanDas/Activities/.git/
+
+C:\Users\LaxmiNarayanDas\Activities>git clone https://github.com/ldas123/FST-M1.git
+Cloning into 'FST-M1'...
+remote: Enumerating objects: 384, done.
+remote: Counting objects: 100% (64/64), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 384 (delta 32), reused 16 (delta 16), pack-reused 320 (from 4)
+Receiving objects: 100% (384/384), 149.20 KiB | 1.70 MiB/s, done.
+Resolving deltas: 100% (99/99), done.
+
+C:\Users\LaxmiNarayanDas\Activities>cd C:\Users\LaxmiNarayanDas\Activities\FST-M1
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git pull origin main
+From https://github.com/ldas123/FST-M1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git branch feature/laxmi
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git branch
+  feature/laxmi
+* main
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git checkout feature/laxmi
+Switched to branch 'feature/laxmi'
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git pull origin main
+From https://github.com/ldas123/FST-M1
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git status
+On branch feature/laxmi
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Rest_Assured/Activities/Activity1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .gitignore
+        .project
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git commit -m "adding changes"
+On branch feature/laxmi
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Rest_Assured/Activities/Activity1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .gitignore
+        .project
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git add Rest_Assured/Activities/Activity1.java
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git commit -m "updating file"
+[feature/laxmi 1b37a51] updating file
+ Committer: Laxmi Narayan Das <laxmi.narayan.das@ibm.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+C:\Users\LaxmiNarayanDas\Activities\FST-M1>git push origin feature/laxmi
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 14 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 491 bytes | 491.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'feature/laxmi' on GitHub by visiting:
+remote:      https://github.com/ldas123/FST-M1/pull/new/feature/laxmi
+remote:
+To https://github.com/ldas123/FST-M1.git
+ * [new branch]      feature/laxmi -> feature/laxmi
