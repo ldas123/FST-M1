@@ -63,6 +63,7 @@ public class Activity1 {
 		response.then().statusCode(200);
 		response.then().body("message",equalTo("77232"));
 		response.prettyPrint();
+		
 	}
 
 }
